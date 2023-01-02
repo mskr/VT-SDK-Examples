@@ -1,0 +1,13 @@
+{
+  "name": "vt2-examples",
+  "version": "1.0.0",
+  "description": "SDK examples",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "https://gitlab.virtual-twins.com/vt-fe/npm-registry": "0.1"
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Twins</title>
+</head>
+
+<body>
+
+    <h1>Virtual Twins</h1>
+
+    <iframe src="https://example.virtual-twins.com/embed.html"></iframe>
+
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        iframe {
+            border: none;
+            width: 1600px;
+            max-width: 100%;
+            height: 900px;
+            margin: auto;
+        }
+
+        h1,
+        h3 {
+            margin: 0.5em auto;
+        }
+
+        p {
+            max-width: 20em;
+            margin: 0.5em auto;
+        }
+    </style>
+
+    <script type="module">
+        // Control the VT in the iframe:
+        import vt from '/virtualtwins.es.js'
+        vt.targetOrigin = 'https://example.virtual-twins.com' // must be origin of iframe (same-origin policy)
+        const iframe = document.querySelector('iframe')
+        iframe.addEventListener('load', () => {
+            vt.setView({ lat: 51.5711, long: 8.1069 })
+        });
+    </script>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Elementum nibh tellus molestie nunc non blandit massa. Facilisis mauris sit amet massa. Sed
+        euismod nisi porta lorem. Commodo odio aenean sed adipiscing diam. Ullamcorper sit amet risus nullam eget. Sit
+        amet massa vitae tortor condimentum lacinia quis vel eros. Suspendisse ultrices gravida dictum fusce ut placerat
+        orci nulla pellentesque. Bibendum neque egestas congue quisque egestas diam. At in tellus integer feugiat
+        scelerisque varius morbi enim nunc. Purus sit amet volutpat consequat mauris nunc congue.</p>
+</body>
+
+</html>
