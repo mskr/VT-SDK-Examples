@@ -1,40 +1,14 @@
-vt2
-
 # vt2
 
-## Table of contents
-
-### Interfaces
+## Interfaces
 
 - [IVTAppExternal](interfaces/IVTAppExternal.md)
-
-### Type Aliases
-
-- [CustomerID](README.md#customerid)
-- [HostString](README.md#hoststring)
-- [IVTCameraViewOptions](README.md#ivtcameraviewoptions)
-- [IVTInitConfig](README.md#ivtinitconfig)
-- [IVTLocationOptions](README.md#ivtlocationoptions)
-- [IVTRoutingViewOptions](README.md#ivtroutingviewoptions)
-- [IVTSelectionViewOptions](README.md#ivtselectionviewoptions)
-- [IVTServiceConfig](README.md#ivtserviceconfig)
-- [IVTViewOptions](README.md#ivtviewoptions)
-- [UUID](README.md#uuid)
-- [VTCommandMessage](README.md#vtcommandmessage)
-- [routingHost](README.md#routinghost)
-- [searchHost](README.md#searchhost)
-
-### Variables
-
-- [VTDefaultLocationOptions](README.md#vtdefaultlocationoptions)
-- [VTDefaultOptions](README.md#vtdefaultoptions)
-- [VTDefaultViewOptions](README.md#vtdefaultviewoptions)
 
 ## Type Aliases
 
 ### CustomerID
 
-Ƭ **CustomerID**: `string`
+ **CustomerID**: `string`
 
 #### Defined in
 
@@ -44,7 +18,7 @@ ___
 
 ### HostString
 
-Ƭ **HostString**: `string`
+ **HostString**: `string`
 
 #### Defined in
 
@@ -54,7 +28,7 @@ ___
 
 ### IVTCameraViewOptions
 
-Ƭ **IVTCameraViewOptions**: `Object`
+ **IVTCameraViewOptions**: `Object`
 
 #### Type declaration
 
@@ -76,7 +50,7 @@ ___
 
 ### IVTInitConfig
 
-Ƭ **IVTInitConfig**: { `height?`: `number` ; `heightUnit?`: `string` ; `host`: [`HostString`](README.md#hoststring) ; `iframeSrc?`: `string` ; `interface?`: `IVTInterfaceOptions` ; `isIFrame?`: `boolean` ; `isInteractive?`: `boolean` ; `styles?`: `IRenderStyle`[] ; `width?`: `number` ; `widthUnit?`: `string`  } & [`IVTServiceConfig`](README.md#ivtserviceconfig) & `IVTMapboxConfig` & [`IVTViewOptions`](README.md#ivtviewoptions)
+ **IVTInitConfig**: { `height?`: `number` ; `heightUnit?`: `string` ; `host`: [`HostString`](README.md#hoststring) ; `iframeSrc?`: `string` ; `interface?`: `IVTInterfaceOptions` ; `isIFrame?`: `boolean` ; `isInteractive?`: `boolean` ; `styles?`: `IRenderStyle`[] ; `width?`: `number` ; `widthUnit?`: `string`  } & [`IVTServiceConfig`](README.md#ivtserviceconfig) & `IVTMapboxConfig` & [`IVTViewOptions`](README.md#ivtviewoptions)
 
 #### Defined in
 
@@ -86,7 +60,7 @@ ___
 
 ### IVTLocationOptions
 
-Ƭ **IVTLocationOptions**: `Object`
+ **IVTLocationOptions**: `Object`
 
 #### Type declaration
 
@@ -102,7 +76,7 @@ ___
 
 ### IVTRoutingViewOptions
 
-Ƭ **IVTRoutingViewOptions**: `Object`
+ **IVTRoutingViewOptions**: `Object`
 
 #### Type declaration
 
@@ -118,7 +92,7 @@ ___
 
 ### IVTSelectionViewOptions
 
-Ƭ **IVTSelectionViewOptions**: `Object`
+ **IVTSelectionViewOptions**: `Object`
 
 #### Type declaration
 
@@ -134,7 +108,7 @@ ___
 
 ### IVTServiceConfig
 
-Ƭ **IVTServiceConfig**: `Object`
+ **IVTServiceConfig**: `Object`
 
 #### Type declaration
 
@@ -151,7 +125,7 @@ ___
 
 ### IVTViewOptions
 
-Ƭ **IVTViewOptions**: { `is3D?`: `boolean` ; `mode?`: `AppModeType` ; `resetViewToRoute?`: `boolean` ; `resetViewToSelection?`: `boolean` ; `select?`: `boolean` ; `zoomLevel?`: `number`  } & [`IVTRoutingViewOptions`](README.md#ivtroutingviewoptions) & [`IVTSelectionViewOptions`](README.md#ivtselectionviewoptions) & [`IVTCameraViewOptions`](README.md#ivtcameraviewoptions)
+ **IVTViewOptions**: { `is3D?`: `boolean` ; `mode?`: `AppModeType` ; `resetViewToRoute?`: `boolean` ; `resetViewToSelection?`: `boolean` ; `select?`: `boolean` ; `zoomLevel?`: `number`  } & [`IVTRoutingViewOptions`](README.md#ivtroutingviewoptions) & [`IVTSelectionViewOptions`](README.md#ivtselectionviewoptions) & [`IVTCameraViewOptions`](README.md#ivtcameraviewoptions)
 
 #### Defined in
 
@@ -161,7 +135,7 @@ ___
 
 ### UUID
 
-Ƭ **UUID**: `string`
+ **UUID**: `string`
 
 #### Defined in
 
@@ -171,7 +145,7 @@ ___
 
 ### VTCommandMessage
 
-Ƭ **VTCommandMessage**: `Object`
+ **VTCommandMessage**: `Object`
 
 Used in window.postMessage() to control iframe.
 
@@ -190,7 +164,7 @@ ___
 
 ### routingHost
 
-Ƭ **routingHost**: `string`
+ **routingHost**: `string`
 
 #### Defined in
 
@@ -200,7 +174,7 @@ ___
 
 ### searchHost
 
-Ƭ **searchHost**: `string`
+ **searchHost**: `string`
 
 #### Defined in
 
@@ -210,7 +184,7 @@ IVTAppExternal.ts:23
 
 ### VTDefaultLocationOptions
 
-• `Const` **VTDefaultLocationOptions**: [`IVTLocationOptions`](README.md#ivtlocationoptions)
+ `Const` **VTDefaultLocationOptions**: [`IVTLocationOptions`](README.md#ivtlocationoptions)
 
 #### Defined in
 
@@ -220,7 +194,7 @@ ___
 
 ### VTDefaultOptions
 
-• `Const` **VTDefaultOptions**: [`IVTInitConfig`](README.md#ivtinitconfig)
+ `Const` **VTDefaultOptions**: [`IVTInitConfig`](README.md#ivtinitconfig)
 
 #### Defined in
 
@@ -230,7 +204,7 @@ ___
 
 ### VTDefaultViewOptions
 
-• `Const` **VTDefaultViewOptions**: [`IVTViewOptions`](README.md#ivtviewoptions)
+ `Const` **VTDefaultViewOptions**: [`IVTViewOptions`](README.md#ivtviewoptions)
 
 #### Defined in
 

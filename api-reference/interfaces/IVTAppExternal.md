@@ -1,5 +1,3 @@
-[vt2](../README.md) / IVTAppExternal
-
 # Interface: IVTAppExternal
 
 Interface for JS API - Complete
@@ -16,53 +14,24 @@ Interface for JS API - Complete
 
   ↳ **`IVTAppExternal`**
 
-## Table of contents
-
-### Properties
-
-- [targetIFrame](IVTAppExternal.md#targetiframe)
-- [targetOrigin](IVTAppExternal.md#targetorigin)
-
-### Methods
-
-- [addAssets](IVTAppExternal.md#addassets)
-- [addAssetsAsync](IVTAppExternal.md#addassetsasync)
-- [addStyles](IVTAppExternal.md#addstyles)
-- [createAssetId](IVTAppExternal.md#createassetid)
-- [dispose](IVTAppExternal.md#dispose)
-- [hideRoute](IVTAppExternal.md#hideroute)
-- [map](IVTAppExternal.md#map)
-- [preload](IVTAppExternal.md#preload)
-- [removeAssets](IVTAppExternal.md#removeassets)
-- [reset](IVTAppExternal.md#reset)
-- [select](IVTAppExternal.md#select)
-- [setRouteEnd](IVTAppExternal.md#setrouteend)
-- [setRouteStart](IVTAppExternal.md#setroutestart)
-- [setUserLocation](IVTAppExternal.md#setuserlocation)
-- [setUserLocationURL](IVTAppExternal.md#setuserlocationurl)
-- [setView](IVTAppExternal.md#setview)
-- [setViewFromDeeplink](IVTAppExternal.md#setviewfromdeeplink)
-- [showRoute](IVTAppExternal.md#showroute)
-- [updateAssets](IVTAppExternal.md#updateassets)
-
 ## Properties
 
 ### targetIFrame
 
-• `Optional` **targetIFrame**: ``null`` \| `HTMLIFrameElement`
+ `Optional` **targetIFrame**: ``null`` \| `HTMLIFrameElement`
 
 Set this property to the iframe with the VT that you want to control.
 Null means this document itself contains the VT.
 
 #### Defined in
 
-IVTAppExternal.ts:329
+IVTAppExternal.ts:330
 
 ___
 
 ### targetOrigin
 
-• `Optional` **targetOrigin**: ``null`` \| `string`
+ `Optional` **targetOrigin**: ``null`` \| `string`
 
 VT embed origin.
 To control a VT in an iframe, set its origin (protocol, host(, port)) here.
@@ -70,13 +39,13 @@ This is necessary for secure cross-origin communication.
 
 #### Defined in
 
-IVTAppExternal.ts:336
+IVTAppExternal.ts:337
 
 ## Methods
 
 ### addAssets
 
-▸ **addAssets**(`assets`): `string`[]
+**addAssets**(`assets`): `string`[]
 
 Add assets to map
 
@@ -96,13 +65,13 @@ IVTAppExternalAssets.addAssets
 
 #### Defined in
 
-IVTAppExternal.ts:294
+IVTAppExternal.ts:295
 
 ___
 
 ### addAssetsAsync
 
-▸ **addAssetsAsync**(`assets`): `Promise`<`string`[]\>
+**addAssetsAsync**(`assets`): `Promise`<`string`[]\>
 
 Add assets to map
 
@@ -122,13 +91,13 @@ IVTAppExternalAssets.addAssetsAsync
 
 #### Defined in
 
-IVTAppExternal.ts:300
+IVTAppExternal.ts:301
 
 ___
 
 ### addStyles
 
-▸ **addStyles**(`styles`): `Promise`<`void`\>
+**addStyles**(`styles`): `Promise`<`void`\>
 
 Add additional styles for asset categories if needed
 
@@ -148,13 +117,13 @@ IVTAppExternalAssets.addStyles
 
 #### Defined in
 
-IVTAppExternal.ts:318
+IVTAppExternal.ts:319
 
 ___
 
 ### createAssetId
 
-▸ **createAssetId**(): `string`
+**createAssetId**(): `string`
 
 Create an ID for an asset, uses uuid()
 
@@ -168,13 +137,13 @@ IVTAppExternalAssets.createAssetId
 
 #### Defined in
 
-IVTAppExternal.ts:288
+IVTAppExternal.ts:289
 
 ___
 
 ### dispose
 
-▸ **dispose**(): `void`
+**dispose**(): `void`
 
 Destroy VT map
 
@@ -184,13 +153,13 @@ Destroy VT map
 
 #### Defined in
 
-IVTAppExternal.ts:360
+IVTAppExternal.ts:361
 
 ___
 
 ### hideRoute
 
-▸ **hideRoute**(): `void`
+**hideRoute**(): `void`
 
 Leave routing mode
 
@@ -210,7 +179,7 @@ ___
 
 ### map
 
-▸ **map**(`domElement`, `options?`): `Promise`<`void`\>
+**map**(`domElement`, `options?`): `Promise`<`void`\>
 
 Display VT map
 
@@ -227,13 +196,13 @@ Display VT map
 
 #### Defined in
 
-IVTAppExternal.ts:343
+IVTAppExternal.ts:344
 
 ___
 
 ### preload
 
-▸ **preload**(): `Promise`<`void`\>
+**preload**(): `Promise`<`void`\>
 
 Preloads all building data after map was initialized with map()
 May be used to preload data when WLAN is active to save bandwidth on mobile devices
@@ -245,13 +214,13 @@ TODO discuss feature
 
 #### Defined in
 
-IVTAppExternal.ts:350
+IVTAppExternal.ts:351
 
 ___
 
 ### removeAssets
 
-▸ **removeAssets**(`ids`): `void`
+**removeAssets**(`ids`): `void`
 
 Remove assets by ID
 
@@ -271,13 +240,13 @@ IVTAppExternalAssets.removeAssets
 
 #### Defined in
 
-IVTAppExternal.ts:312
+IVTAppExternal.ts:313
 
 ___
 
 ### reset
 
-▸ **reset**(): `Promise`<`void`\>
+**reset**(): `Promise`<`void`\>
 
 Reset VT map to default
 
@@ -287,13 +256,13 @@ Reset VT map to default
 
 #### Defined in
 
-IVTAppExternal.ts:355
+IVTAppExternal.ts:356
 
 ___
 
 ### select
 
-▸ **select**(`featureId`, `options?`): `Promise`<`void`\>
+**select**(`featureId`, `options?`): `Promise`<`void`\>
 
 Select feature on VT map
 
@@ -320,7 +289,7 @@ ___
 
 ### setRouteEnd
 
-▸ **setRouteEnd**(`end`): `Promise`<`void`\>
+**setRouteEnd**(`end`): `Promise`<`void`\>
 
 Enter routing mode with end position
 
@@ -346,7 +315,7 @@ ___
 
 ### setRouteStart
 
-▸ **setRouteStart**(`start`): `Promise`<`void`\>
+**setRouteStart**(`start`): `Promise`<`void`\>
 
 Enter routing mode with start position
 
@@ -372,21 +341,17 @@ ___
 
 ### setUserLocation
 
-▸ **setUserLocation**(`geoPosition?`, `level?`, `options?`): `Promise`<`void`\>
+**setUserLocation**(`geoPosition?`, `level?`, `options?`): `Promise`<`void`\>
 
 Show user location (blue circle) on map
-
-**`See`**
-
-https://developer.mozilla.org/en-US/docs/Web/API/GeolocationPosition
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `geoPosition?` | `GeolocationPosition` | object of type GeolocationPosition |
-| `level?` | `string` \| `number` | - |
-| `options?` | [`IVTLocationOptions`](../README.md#ivtlocationoptions) | - |
+| `geoPosition?` | `GeolocationPosition` | object of type [GeolocationPosition](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationPosition) |
+| `level?` | `string` \| `number` | optional ordinal or ID if indoors |
+| `options?` | [`IVTLocationOptions`](../README.md#ivtlocationoptions) |  |
 
 #### Returns
 
@@ -398,13 +363,13 @@ IVTAppExternalLocation.setUserLocation
 
 #### Defined in
 
-IVTAppExternal.ts:275
+IVTAppExternal.ts:276
 
 ___
 
 ### setUserLocationURL
 
-▸ **setUserLocationURL**(`url`, `options?`): `Promise`<`void`\>
+**setUserLocationURL**(`url`, `options?`): `Promise`<`void`\>
 
 #### Parameters
 
@@ -423,13 +388,13 @@ IVTAppExternalLocation.setUserLocationURL
 
 #### Defined in
 
-IVTAppExternal.ts:276
+IVTAppExternal.ts:277
 
 ___
 
 ### setView
 
-▸ **setView**(`identifierOrCoords`, `options?`): `Promise`<`void`\>
+**setView**(`identifierOrCoords`, `options?`): `Promise`<`void`\>
 
 Show feature on VT map
 
@@ -456,7 +421,7 @@ ___
 
 ### setViewFromDeeplink
 
-▸ **setViewFromDeeplink**(): `Promise`<`void`\>
+**setViewFromDeeplink**(): `Promise`<`void`\>
 
 Takes the URL from the browser address bar and follows it if it contains a deeplink.
 Works also inside iframes, in which case it looks one level up the window hierarchy.
@@ -478,7 +443,7 @@ ___
 
 ### showRoute
 
-▸ **showRoute**(`stops`, `options?`): `Promise`<`void`\>
+**showRoute**(`stops`, `options?`): `Promise`<`void`\>
 
 Show route on VT map
 
@@ -505,7 +470,7 @@ ___
 
 ### updateAssets
 
-▸ **updateAssets**(`ids`): `void`
+**updateAssets**(`ids`): `void`
 
 update assets by ID
 
@@ -525,4 +490,4 @@ IVTAppExternalAssets.updateAssets
 
 #### Defined in
 
-IVTAppExternal.ts:306
+IVTAppExternal.ts:307
