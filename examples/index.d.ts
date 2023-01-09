@@ -1,13 +1,4 @@
-import { IVTAppExternal, IVTInitConfig, IVTViewOptions, IVTLocationOptions, IAssetDefinition, UUID, CustomerID } from '../IVTAppExternal';
-
-import LatLong, { ILatLong } from '../../vt2/common/LatLong';
-import IRenderStyle from '../../vt2/modules/render/IRenderStyle';
-import { AppModeType } from '../../vt2/modules/app/IAppMode';
-
-// FIXME: Resolve imports during build, so that SDK users have full type declaration
-
-// This is a handmade declaration file.
-// There is also a generated declaration file: sdk/dist/sdk/IVTAppExternal.d.ts
+import { IVTAppExternal, IVTInitConfig, IVTViewOptions, IVTLocationOptions, IAssetDefinition, UUID, CustomerID, LatLong, IRenderStyle, AppModeType } from '../virtualtwins';
 
 declare global {
     const vt: IVTAppExternal;
