@@ -1,8 +1,12 @@
+export declare type AppMode = AppModeType;
+
 declare enum AppModeType {
     NullMode = "Null",
     RoamingMode = "Roaming",
     RoutingMode = "Routing"
 }
+
+export declare type Asset = IAssetDefinition;
 
 /**
  * Room IDs etc. according to the software system,
@@ -642,6 +646,8 @@ declare enum RenderState {
     Inactive = "inactive"
 }
 
+export declare type RenderStyle = IRenderStyle;
+
 declare enum RenderType {
     /** area */
     Fill = "fill",
@@ -670,5 +676,7 @@ export declare const VTDefaultLocationOptions: IVTLocationOptions;
 export declare const VTDefaultOptions: IVTInitConfig;
 
 export declare const VTDefaultViewOptions: IVTViewOptions;
+
+export declare type VTInterfaceOptions = IVTInterfaceOptions;
 
 export { }
