@@ -1,4 +1,11 @@
-import { IVTAppExternal, IVTInitConfig, IVTViewOptions, IVTLocationOptions, IAssetDefinition, UUID, CustomerID, LatLong, IRenderStyle, AppModeType } from '../virtualtwins';
+import { IVTAppExternal, IVTInitConfig, IVTViewOptions, IVTLocationOptions, IAssetDefinition, UUID, CustomerID, LatLong, IRender, RenderStyle } from './virtualtwins';
+
+// FIXME: Resolve imports during build, so that SDK users have full type declaration
+
+// Test if it works in isolation: https://github.dev/mskr/VT-SDK-Examples
+
+// This is a handmade declaration file.
+// There is also a generated declaration file: sdk/dist/sdk/IVTAppExternal.d.ts
 
 declare global {
     const vt: IVTAppExternal;
@@ -23,7 +30,7 @@ declare global {
             addAssetsAsync(assets: IAssetDefinition[]): Promise<string[]>;
             updateAssets(ids: string[]): void;
             removeAssets(ids: string[]): void;
-            addStyles(styles: IRenderStyle[]): Promise<void>;
+            addStyles(styles: RenderStyle[]): Promise<void>;
         }
     }
 }
