@@ -1,0 +1,7 @@
+{
+    "name": "virtualtwins",
+    "version": "0.1",
+    "type": "module",
+    "main": "virtualtwins.es.js",
+    "types": "virtualtwins.d.ts"
+}
