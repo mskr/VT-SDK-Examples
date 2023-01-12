@@ -12,6 +12,8 @@ const a = new VT.Map(A, {
     selectionId: 'cd7dc679-07dc-4c32-9008-345ae0547ebf',
 })
 
+a.setView({ lat: 50, long: 8 })
+
 const b = new VT.Map(B, {
     host: 'https://api-demo-klinik.virtual-twins.com/',
     select: true,
